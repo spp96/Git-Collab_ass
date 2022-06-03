@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign up</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #container {
+            border: 1px solid transparent;
+            width: 28%;
+            margin: auto;
+            margin-top: 60px;
+            background-color: #48c9b0;
+        }
+        #container>div>h2{
+            font-weight: 100;
+            color: white;
+        }
+
+        #container>div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 40px;
+        }
+        #container>div>div{
+            display: grid;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        form {
+            /* border: 1px solid; */
+            display: grid;
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        input {
+            display: block;
+            width: 70%;
+            margin: auto;
+            height: 40px;
+            border: none;
+        }
+        input[placeholder]{
+            padding-left: 15px;
+        }
+        button {
+            display: block;
+            width: 75%;
+            margin: auto;
+            height: 50px;
+            margin-bottom: 0px;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            background-color: #17a589;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="container">
+        <div>
+            <h2>- Visitor -</h2>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Full name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="org" id="org" placeholder="Organization">
+            </form>
+            <div>
+                <button id="Signup">SIGN UP</button>
+                <button id="return">RETURN</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
