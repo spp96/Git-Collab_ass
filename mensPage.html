@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .flex-container img{
+            width: 300px;
+            height: 360px;
+        }
+        .card{
+            margin-right: 30px;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(60, 59, 59);
+        }
+        h3+p{
+            font-size: larger;
+            color: gray;
+        }
+        #bprice{
+            color: gray;
+            font-weight: 700;
+        }
+        #dpercentage{
+            color: green;
+            font-weight: 700;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="flex-container">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61ZJEWRsrPL._UY879_.jpg" alt="">
+            <h3>Pause</h3>
+            <p>Men cotton long sleeves shrug</p>
+            <p id="price">$349 <strike id="bprice">$1,499</strike><span id="dpercentage">-76%</span></p>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81sIS48PvsL._UX679_.jpg" alt="">
+            <h3>JUBINATION</h3>
+            <p>Men wool sleeveless sweater</p>
+            <p id="price">$799 <strike id="bprice">$1,499</strike><span id="dpercentage">  -47%</span></p>
+        </div>
+    </div>
 </body>
 </html>
